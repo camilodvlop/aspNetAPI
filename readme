@@ -5,3 +5,13 @@ npm install -g azure-functions-core-tools@4 --unsafe-perm true
 create the function 
 dotnet new func -n CPTestFunctionApp -o CPTestFunctionApp
 add file : TestHttpFunction.cs and 
+
+
+***To create the database using terraform:
+Install azure CLI in your machine
+login to your Azure account : 
+az login   #use your credentials
+locate in the Infrastructure folder and execute:
+terraform init
+terraform plan
+terraform apply
