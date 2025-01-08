@@ -1,4 +1,7 @@
 to create a C# Azure Function first install the tools:
 dotnet new -i Microsoft.Azure.WebJobs.ProjectTemplates
+to install func so you can create the function with templates
+npm install -g azure-functions-core-tools@4 --unsafe-perm true 
 create the function 
-dotnet new func -n ApiTestFunction --force
+dotnet new func -n CPTestFunctionApp -o CPTestFunctionApp
+add file : TestHttpFunction.cs and 
