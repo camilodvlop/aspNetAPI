@@ -1,4 +1,5 @@
 to create a C# Azure Function first install the tools:
+install the extension on VScode for Azure Functions
 dotnet new -i Microsoft.Azure.WebJobs.ProjectTemplates
 to install func so you can create the function with templates
 npm install -g azure-functions-core-tools@4 --unsafe-perm true 
@@ -15,3 +16,9 @@ locate in the Infrastructure folder and execute:
 terraform init
 terraform plan
 terraform apply
+
+
+to deploy in kubernetes:
+build docker (don't forget the end dot .):
+docker build -t cptest-function:latest .
+
